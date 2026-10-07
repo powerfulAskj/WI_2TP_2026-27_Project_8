@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie HTML + CSS - Szablon strony</title>
+
+    <!-- 
+        KROK 1: Podłącz plik stylów CSS
+        Dodaj poniżej link do pliku styles.css
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- 
+        KROK 2 (do wykonania NA KOŃCU, po spełnieniu wszystkich wymagań):
+        Dodaj link do Font Awesome Icons (CDN).
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+        Następnie w treści strony dodaj kilka dowolnych ikon, np.:
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-brands fa-github"></i>
+    -->
+  </head>
+  <body>
+    <!-- 
+        STRUKTURA SEMANTYCZNA STRONY
+        Uzupełnij poniższe sekcje zgodnie z instrukcjami.
+        Strona musi zawierać elementy: header, nav (opcjonalnie), main, aside, footer.
+    -->
+
+    <header>
+      <!-- 
+            HEADER
+            - Dodaj nagłówek główny strony 
+            - Możesz dodać logo lub krótkie motto
+            - Po dodaniu Font Awesome możesz wstawić tutaj ikonę
+        -->
+      <div class="header_logo">
+        <h1><i class="fa-solid fa-gamepad"></i> asky.gg</h1>
+        <p>graj. rywalizuj. wygrywaj.</p>
+      </div>
+      <nav>
+        <a href="https://github.com/powerfulAskj">GitHub</a>
+        <a href="https://www.youtube.com/@harchkosoft">YouTube</a>
+        <a href="https://soundcloud.com/powerfulAskj">Soundcloud</a>
+        <ul>
+          <li><a href="https://www.google.com/">google</a></li>
+          <li>
+            <a
+              href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna"
+              >wikipedia</a
+            >
+          </li>
+          <li><a href="https://www.youtube.com/">youtube</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- 
+            GŁÓWNA CZĘŚĆ STRONY
+            Użyj flexboxa lub gridu w CSS, aby ułożyć main i aside obok siebie.
+        -->
+
+      <main>
+        <!-- 
+                MAIN - główna treść
+                Tutaj umieść:
+                1. Listę numerowaną
+                2. Listę punktowaną
+                3. Tabelę
+                4. Obraz - możesz użyć dowolnego obrazu z internetu (np. placehold.co lub picsum.photos)
+                5. Elementy blokowe <div> z klasami do stylowania (margin, padding, border)
+            -->
+
+        <section class="list">
+          <h2>Listy</h2>
+
+          <div class="list_container">
+            <div>
+              <h3>top-3 stron internetowych by powerfulAskj</h3>
+              <ol>
+                <li>solarisR (Deprecated)</li>
+                <li>hysterium 0.1 (Deprecated)</li>
+                <li>WebStudio</li>
+              </ol>
+            </div>
+
+            <div>
+              <h3>ulubione rzeczy powerfulAskj</h3>
+              <ul>
+                <li>speedcore</li>
+                <li>geometry dash</li>
+                <li>programowanie</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="gd_table">
+          <h2>Top 10 ukończonych demonów w Geometry Dash</h2>
+
+          <table class="tabela-danych">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Demon</th>
+                <th>Poziom</th>
+                <th>Próby</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Impulse</td>
+                <td>Easy Demon</td>
+                <td>300+</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Deadlocked</td>
+                <td>Easy Demon</td>
+                <td>1500+</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Verity</td>
+                <td>Medium Demon</td>
+                <td>600+</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>B</td>
+                <td>Medium Demon</td>
+                <td>600+</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>foxtail socks</td>
+                <td>Hard Demon</td>
+                <td>500+</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Kingdom of Hearts</td>
+                <td>Easy Demon</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>ToE 2</td>
+                <td>Easy Demon</td>
+                <td>800+</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Clubstep</td>
+                <td>Easy Demon</td>
+                <td>500+</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Microphone</td>
+                <td>Easy Demon</td>
+                <td>50+</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>The Nightmare</td>
+                <td>Easy Demon</td>
+                <td>700+</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="hardest">
+            <h3>Bonus - Hardest Demon</h3>
+            <p><strong>CraZy</strong> - Hard Demon(97%)</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Obraz</h2>
+          <!-- 
+                    OBRAZ
+                    Wstaw element <img> z atrybutami:
+                    - src (adres obrazu, np. https://picsum.photos/400/250)
+                    - alt (opis alternatywny)
+                    - opcjonalnie width / height lub klasa do stylowania
+                -->
+        </section>
+
+        <section>
+          <h2>Elementy blokowe (div)</h2>
+          <!-- 
+                    ELEMENTY BLOKOWE DIV
+                    Utwórz kilka elementów <div> z różnymi klasami.
+                    Każdy div powinien mieć w CSS:
+                    - margin
+                    - padding
+                    - border
+                    
+                    Przykładowe klasy do użycia:
+                    - class="box box-primary"
+                    - class="box box-secondary"
+                    - class="box box-accent"
+                    
+                    W środku divów umieść tekst lub inne elementy.
+                -->
+        </section>
+      </main>
+
+      <aside>
+        <!-- 
+                ASIDE - panel boczny
+                - Dodaj nagłówek (h2 lub h3)
+                - Możesz umieścić listę linków, informacje dodatkowe, lub ikony (po dodaniu Font Awesome)
+            -->
+        <h2><!-- Tytuł panelu bocznego --></h2>
+      </aside>
+    </div>
+
+    <footer>
+      <!-- 
+            FOOTER
+            - Dodaj informacje o autorze / copyright
+            - Możesz dodać linki społecznościowe (po dodaniu Font Awesome - ikony)
+        -->
+      <p><!-- Wpisz stopkę, np. 2026 Twoje Imię --></p>
+    </footer>
+  </body>
+</html>
